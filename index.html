@@ -6,7 +6,27 @@
     <title>Pathivara Aluminium & Steel Works | Jhapa Nepal</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const buttons = document.querySelectorAll(".service-btn");
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            const content = this.nextElementSibling;
+
+            content.classList.toggle("show");
+
+        });
+
+    });
+
+});
+
+</script>
 
 
 <body>
@@ -36,9 +56,9 @@
         <h2>Aluminium • Steel • UPVC Works</h2>
 
         <p>
-            We provide quality aluminium, steel, UPVC doors/windows,
-            railings, gates and glass works in Jhapa.
-        </p>
+            We provide quality aluminium, steel, UPVC doors/windows, partitions &
+            railings.
+        </p> 
 
     </div>
 
@@ -47,22 +67,73 @@
 
     <h2>Our Services</h2>
 
-    <div class="box">Aluminium Works</div>
-    <div class="box">UPVC Doors & Windows</div>
-    <div class="box">Steel Railings</div>
-    <div class="box">Gates & Partitions</div>
-    <div class="box">Glass Works</div>
+    <!-- Aluminium -->
+    <div class="service-item">
+
+        <button class="service-btn">
+            Aluminium Works
+        </button>
+
+        <div class="service-content">
+
+            <p>
+                Sliding windows, partitions, kitchen frames,
+                aluminium doors and custom designs.
+            </p>
+
+            <img src="images/aluminium.png" alt="Aluminium Work">
+
+        </div>
+
+    </div>
+
+    <!-- UPVC -->
+    <div class="service-item">
+
+        <button class="service-btn">
+            UPVC Doors & Windows
+        </button>
+
+        <div class="service-content">
+
+            <p>
+                Modern UPVC windows and doors with strong durability
+                and sound protection.
+            </p>
+
+            <img src="images/upvc.png" alt="UPVC Work">
+
+        </div>
+
+    </div>
+
+    <!-- Steel -->
+    <div class="service-item">
+
+        <button class="service-btn">
+            Steel Railings
+        </button>
+
+        <div class="service-content">
+
+            <p>
+                Stylish stainless steel railings for balcony, stairs
+                and commercial buildings.
+            </p>
+
+            <img src="images/railings.png" alt="Steel Work">
+
+        </div>
+
+    </div>
 
 </section>
-
 <section class="gallery" id="gallery">
 
     <h2>Our Work Gallery</h2>
-
-    <img src="images/card.jpg" alt="Work 1">
-    <img src="images/card.jpg" alt="Work 2">
-    <img src="images/card.jpg" alt="Work 3">
-
+<img src="images/work1.jpeg" alt="Work 1">
+<img src="images/work2.jpeg" alt="Work 2">
+<img src="images/work3.jpeg" alt="Work 3">
 </section>
 <section class="cta">
 
